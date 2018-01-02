@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="css" href="Home_css.css" />
+    <title>The Music Chamber</title>
+   
+    <style>
+        html {
+            background-image: url("bg3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            text-rendering: optimizeLegibility !important;
+            -webkit-font-smoothing: antialiased !important;
+        }
+
+        body {
+        }
+
+        #title {
+            font-family: Aaargh;
+            font-size: 80px;
+            text-align: center;
+            font-weight: 500;
+            color: white;
+            text-shadow: 2px 2px 5px #000000;
+            font-family: 'Noticia Text Regular';
+        }
+
+        #boxshadow {
+            font-family: 'Freehand591 BT';
+            font-size: 45pt;
+            position: relative;
+            opacity: 0.5;
+            text-align: center;
+            border-radius: 25px;
+            color:white;
+        }
+
+
+        .button {
+            margin-left: 400px;
+           display: inline-block;
+           
+            border-radius: 4px;
+            background-color: rgba(0, 0, 0, 0.50);
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-family: Combo;
+            font-size: 40px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+            .button span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+                .button span:after {
+                    content: '»';
+                    position: absolute;
+                    opacity: 0;
+                    top: 0;
+                    right: -20px;
+                    transition: 0.5s;
+                }
+
+            .button:hover span {
+                padding-right: 25px;
+            }
+
+                .button:hover span:after {
+                    opacity: 1;
+                    right: 0;
+                }
+
+                 
+
+        form {
+            margin-left: 550px;
+        }
+
+
+
+
+
+
+        .popup {
+            position: fixed;
+            left: 50vw;
+            margin-left: 35px;
+            top: 50vh;
+            margin-top: -210px;
+            opacity: 0;
+            transition: all 1s;
+            -webkit-transition: all 1s;
+        }
+
+
+            .popup div {
+                width: 120px;
+                font-size: 20px;
+            }
+
+            .popup div {
+                padding: 50px;
+                background-color: black;
+                border-radius: 40px;
+                color: white;
+                text-align: center;
+            }
+
+        
+         
+
+    </style>
+</head>
+<body>
+    <br /><br /><br /><br /><br /><br />
+
+
+    <div id="title">
+        The Music Chamber
+    </div>
+
+    <div id="boxshadow">
+        B'Coz music is food to the soul...
+    </div>
+    <br /><br />
+
+
+    <form method="get" action="Start.aspx" id="form1">
+        <button type="submit" class="button" style="vertical-align:middle"><span>Try Now </span></button>
+    </form>
+
+    <form method="get" action="Register.aspx">
+        <button type="submit" class="button"><span>Register </span></button>
+
+    </form>
+
+    <form method="get" action="Login.aspx">
+        <button type="submit" class="button"><span>Sign In </span></button>
+    </form>
+
+
+
+</body>
+</html>

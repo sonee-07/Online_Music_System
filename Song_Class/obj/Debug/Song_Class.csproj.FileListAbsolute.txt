@@ -1,0 +1,11 @@
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Song_Class\bin\Debug\Song_Class.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Song_Class\bin\Debug\Song_Class.pdb
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Song_Class\obj\Debug\Song_Class.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Song_Class\obj\Debug\Song_Class.pdb
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Song_Class\obj\Debug\Song_Class.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Song_Class\bin\Debug\Database.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Song_Class\bin\Debug\Playlist_Class.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Song_Class\bin\Debug\User_Class.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Song_Class\bin\Debug\Database.pdb
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Song_Class\bin\Debug\Playlist_Class.pdb
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Song_Class\bin\Debug\User_Class.pdb

@@ -1,0 +1,90 @@
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\Online_Music_System.dll.config
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\Online_Music_System.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\Online_Music_System.pdb
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\Antlr3.Runtime.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\AspNet.ScriptManager.jQuery.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.AspNet.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.Core.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.OAuth.Consumer.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.OAuth.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.OpenId.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\EntityFramework.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\EntityFramework.SqlServer.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\Microsoft.AspNet.FriendlyUrls.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\Microsoft.ScriptManager.MSAjax.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\Microsoft.ScriptManager.WebForms.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\Microsoft.Web.Infrastructure.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\System.Web.Optimization.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\System.Web.Providers.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\WebGrease.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\EntityFramework.xml
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\EntityFramework.SqlServer.xml
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\System.Web.Providers.xml
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.Core.xml
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.OAuth.xml
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.OAuth.Consumer.xml
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.OpenId.xml
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.AspNet.xml
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\Microsoft.AspNet.FriendlyUrls.xml
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\obj\Debug\Online_Music_System.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\obj\Debug\Online_Music_System.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\obj\Debug\Online_Music_System.pdb
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\Database.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\Playlist_Class.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\Song_Class.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\User_Class.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\Database.pdb
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\Playlist_Class.pdb
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\Song_Class.pdb
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\User_Class.pdb
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\Online_Music_System\bin\Media-Player-ASP.NET-Control.dll
+F:\Online_Music_System\Online_Music_System\bin\Online_Music_System.dll
+F:\Online_Music_System\Online_Music_System\bin\Online_Music_System.pdb
+F:\Online_Music_System\Online_Music_System\bin\Antlr3.Runtime.dll
+F:\Online_Music_System\Online_Music_System\bin\AspNet.ScriptManager.jQuery.dll
+F:\Online_Music_System\Online_Music_System\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+F:\Online_Music_System\Online_Music_System\bin\Database.dll
+F:\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.AspNet.dll
+F:\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.Core.dll
+F:\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.OAuth.Consumer.dll
+F:\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.OAuth.dll
+F:\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.OpenId.dll
+F:\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+F:\Online_Music_System\Online_Music_System\bin\EntityFramework.dll
+F:\Online_Music_System\Online_Music_System\bin\EntityFramework.SqlServer.dll
+F:\Online_Music_System\Online_Music_System\bin\Microsoft.AspNet.FriendlyUrls.dll
+F:\Online_Music_System\Online_Music_System\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+F:\Online_Music_System\Online_Music_System\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+F:\Online_Music_System\Online_Music_System\bin\Microsoft.ScriptManager.MSAjax.dll
+F:\Online_Music_System\Online_Music_System\bin\Microsoft.ScriptManager.WebForms.dll
+F:\Online_Music_System\Online_Music_System\bin\Microsoft.Web.Infrastructure.dll
+F:\Online_Music_System\Online_Music_System\bin\Playlist_Class.dll
+F:\Online_Music_System\Online_Music_System\bin\Song_Class.dll
+F:\Online_Music_System\Online_Music_System\bin\System.Web.Optimization.dll
+F:\Online_Music_System\Online_Music_System\bin\System.Web.Providers.dll
+F:\Online_Music_System\Online_Music_System\bin\User_Class.dll
+F:\Online_Music_System\Online_Music_System\bin\WebGrease.dll
+F:\Online_Music_System\Online_Music_System\bin\Database.pdb
+F:\Online_Music_System\Online_Music_System\bin\Playlist_Class.pdb
+F:\Online_Music_System\Online_Music_System\bin\Song_Class.pdb
+F:\Online_Music_System\Online_Music_System\bin\User_Class.pdb
+F:\Online_Music_System\Online_Music_System\bin\EntityFramework.xml
+F:\Online_Music_System\Online_Music_System\bin\EntityFramework.SqlServer.xml
+F:\Online_Music_System\Online_Music_System\bin\System.Web.Providers.xml
+F:\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.Core.xml
+F:\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.OAuth.xml
+F:\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.OAuth.Consumer.xml
+F:\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.OpenId.xml
+F:\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+F:\Online_Music_System\Online_Music_System\bin\DotNetOpenAuth.AspNet.xml
+F:\Online_Music_System\Online_Music_System\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+F:\Online_Music_System\Online_Music_System\bin\Microsoft.AspNet.FriendlyUrls.xml
+F:\Online_Music_System\Online_Music_System\obj\Debug\Online_Music_System.csprojResolveAssemblyReference.cache
+F:\Online_Music_System\Online_Music_System\obj\Debug\Online_Music_System.dll
+F:\Online_Music_System\Online_Music_System\obj\Debug\Online_Music_System.pdb

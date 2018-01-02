@@ -1,0 +1,131 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.Linq;
+using Database;
+using Song_Class;
+
+namespace Online_Music_System
+{
+    public partial class play : System.Web.UI.Page
+    {
+        MusicdbDataContext context = new MusicdbDataContext();
+        protected void Page_Load(object sender, EventArgs e)
+        {
+               
+            
+               
+            
+        }
+        protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("main_page.aspx");
+        }
+        protected void ImageButton2_Click1(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("Profile.aspx");
+        }
+
+        protected void ImageButton1_Click1(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("Search.aspx");
+
+        }
+
+        
+
+
+        SongClass songobj = new SongClass();
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            if (RadioButtonList1.SelectedValue == "Search By Tag")
+            {
+                string tag = TextBox1.Text;
+                var query = from c in context.Songs
+                            where c.Tag == tag
+                            select c.Songname;
+
+                GridView2.DataSource = null;
+                GridView2.DataBind();
+                if (query == null)
+                {
+                    Label1.Text = "No results";
+                }
+                else
+                {
+                    GridView1.DataSource = query;
+                    GridView1.DataBind();
+
+                }
+            }
+            else if (RadioButtonList1.SelectedValue == "Search Song By Username")
+            {
+                string Username = TextBox1.Text;
+                var query1 = from c in context.Playlists
+                             join b in context.Users
+                             on c.Username equals b.Username
+                             where b.Username == Username
+                             select c.Playlist_Id;
+
+                GridView2.DataSource = null;
+                GridView2.DataBind();
+                var query2 = from c in context.Song_to_Playlists
+                             join b in context.Songs
+                             on c.Song_Id equals b.Song_Id
+                             where query1.Contains(c.Playlist_Id)
+                             select new { song = b.File.ToArray(), songname = b.Songname };
+                if (query2.First() == null)
+                {
+                    Label1.Text = "No results";
+                }
+                else
+                {
+                    GridView1.DataSource = query2;
+                    GridView1.DataBind();
+                }
+             }
+
+            else if (RadioButtonList1.SelectedValue == "Search User")
+            {
+                string name = TextBox1.Text;
+
+                GridView1.DataSource = null;
+                GridView1.DataBind();
+                var query1 = from c in context.Users
+                             where c.Name.Equals(TextBox1.Text)
+                             select new { User_Name = c.Username, Img_Id = c.Username };
+
+                if (query1 == null)
+                {
+                    Label1.Text = "No results";
+                }
+                else
+                {
+                    GridView2.DataSource = query1;
+                    GridView2.DataBind();
+                }
+            }
+        }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string url;
+            string name = GridView1.SelectedRow.Cells[1].Text.ToString();
+                url = @"C:\Users\Admin\Documents\Visual Studio 2013\Projects\Online_Music_System\new\" + name;
+                Media_Player_Control1.MovieURL = url;
+         
+        }
+
+     
+        protected void GridView2_SelectedIndexChanged1(object sender, EventArgs e)
+        {
+            /*string uname = GridView2.SelectedRow.Cells[2].Text;
+            Response.Redirect("view profile.aspx?name=" + uname);*/
+        }
+
+
+    }
+}

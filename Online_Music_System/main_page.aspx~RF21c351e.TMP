@@ -1,0 +1,144 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="main_page.aspx.cs" Inherits="trial.main_page" %>
+ <%HttpContext.Current.Response.Cache.SetAllowResponseInBrowserHistory(false);
+    HttpContext.Current.Response.Cache.SetCacheability(HttpCacheability.NoCache);
+    HttpContext.Current.Response.Cache.SetExpires(DateTime.UtcNow.AddDays(-1));
+    HttpContext.Current.Response.Cache.SetValidUntilExpires(false);
+    HttpContext.Current.Response.Cache.SetRevalidation(HttpCacheRevalidation.AllCaches);
+    HttpContext.Current.Response.Cache.SetNoStore();
+    Response.Cache.SetExpires(DateTime.Now);
+    System.Web.HttpContext.Current.Response.AddHeader("Pragma", "nocache");
+    Response.Cache.SetValidUntilExpires(true);
+    Response.Buffer = true;
+    Response.ExpiresAbsolute = DateTime.Now.Subtract(new TimeSpan(1, 0, 0, 0));
+    Response.Expires = 0;
+    Response.CacheControl = "No-cache";
+    Response.Cache.SetExpires(DateTime.UtcNow.AddYears(-4));
+    Response.ExpiresAbsolute = DateTime.Now.Subtract(new TimeSpan(1, 0, 0, 0));
+    Response.AppendHeader("Pragma", "nocache");
+    Response.Cache.AppendCacheExtension("must-revalidate,proxy-revalidate,post-check=0,pre-check=0"); %>
+    <script lang="javascript" type="text/javascript">
+        window.onbeforeunload=function(){}</script>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server"><link rel="stylesheet" type="css" href="main_page.css"/>
+    <title></title>
+    
+    <style type="text/css">
+        body{
+            background-image:url('s2.jpg');
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-attachment: fixed;
+            width: 763px;
+        }
+
+       .title{
+    position:fixed;
+    text-align:center;
+    background-color:rgba(6,50,60,0.85);
+    height:50px;
+    width:75.79%;
+    margin-left:-10px;
+    margin-top:0px;
+    color:white;
+    font-family:'Freehand591 BT';
+    font-size:40px;
+    
+}
+       .search{
+          margin-left:100px;
+          margin-top:13px;
+       }
+
+       .button{
+           width:43%;
+           background-color:rgba(6,50,60,0.85);
+           height:50px;
+           margin-left:1012px;
+           
+       }
+        
+              
+
+       .dropbtn{
+           margin-top:13px;
+       }
+
+       .dropdown-content{
+           display:none;
+           position:absolute;
+           right:0;
+           background-color:#f9f9f9;
+           box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+           margin-top:1px;
+       }
+
+       .dropdown-content a{
+           color:black;
+           padding:15px 16px;
+           text-decoration:none;
+           display:block;
+       }
+       .dropdown{
+           margin-left:10px;
+
+       }
+       .dropdown-content a:hover{
+           background-color:#f1f1f1
+       }
+
+       .dropdown:hover .dropdown-content{
+           display:block;
+       }
+          
+       .dropdown:hover .dropbtn{
+           
+       }
+       
+
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+       <br/>
+        
+         <div class="title">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         
+           The Music Chamber
+        </div>
+
+        <div class="button">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;<asp:ImageButton ID="ImageButton1" runat="server" Height="24px" ImageUrl="~/search.png" Width="25px" CssClass="search" OnClick="ImageButton1_Click1" />
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/profile.png" Height="25px" Width="30px" OnClick="ImageButton2_Click1" />
+            &nbsp;&nbsp;
+
+            <div class="dropdown"  style="float: right; width: 53px;">
+                <asp:ImageButton ID="ImageButton3" runat="server" Height="25px" Width="30px" CssClass="dropbtn" ImageUrl="~/set.png" />
+              <div class="dropdown-content">
+                    <a href="Change_Password.aspx">Change Password</a>
+                    <a href="Edit Profile.aspx">Edit Profile</a>
+                    <a href="#">Logout</a>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+
+       </div>
+
+<br/><br/><br/><br/><br/>
+        <asp:AdRotator ID="AdRotator1" runat="server" DataSourceID="SqlDataSource1" />
+
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:MusicdbConnectionString %>" SelectCommand="SELECT [Playlistname] FROM [Playlist] WHERE ([Username] = @Username)">
+            <SelectParameters>
+                <asp:SessionParameter DefaultValue="" Name="Username" SessionField="Username" Type="String" />
+            </SelectParameters>
+        </asp:SqlDataSource>
+
+    </form>
+</body>
+</html>

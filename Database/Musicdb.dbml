@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Musicdb" Class="MusicdbDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\sqlexpress;Initial Catalog=Musicdb;Integrated Security=True" SettingsObjectName="Database.Properties.Settings" SettingsPropertyName="MusicdbConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="Username" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Security_Question" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Security_Ans" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Image" Type="System.Data.Linq.Binary" DbType="Image NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="User_Playlist" Member="Playlists" ThisKey="Username" OtherKey="Username" Type="Playlist" />
+      <Association Name="User_Favorite" Member="Favorites" ThisKey="Username" OtherKey="Username" Type="Favorite" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Playlist" Member="Playlists">
+    <Type Name="Playlist">
+      <Column Name="Playlist_Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Song_Count" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Like_Count" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Playlistname" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Playlist_Song_to_Playlist" Member="Song_to_Playlists" ThisKey="Playlist_Id" OtherKey="Playlist_Id" Type="Song_to_Playlist" />
+      <Association Name="Playlist_Favorite" Member="Favorites" ThisKey="Playlist_Id" OtherKey="Playlist_Id" Type="Favorite" />
+      <Association Name="User_Playlist" Member="User" ThisKey="Username" OtherKey="Username" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Song" Member="Songs">
+    <Type Name="Song">
+      <Column Name="Song_Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Songname" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[File]" Member="File" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Tag" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Song_Song_to_Playlist" Member="Song_to_Playlists" ThisKey="Song_Id" OtherKey="Song_Id" Type="Song_to_Playlist" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Song_to_Playlist" Member="Song_to_Playlists">
+    <Type Name="Song_to_Playlist">
+      <Column Name="Song_Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Playlist_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Playlist_Song_to_Playlist" Member="Playlist" ThisKey="Playlist_Id" OtherKey="Playlist_Id" Type="Playlist" IsForeignKey="true" />
+      <Association Name="Song_Song_to_Playlist" Member="Song" ThisKey="Song_Id" OtherKey="Song_Id" Type="Song" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Favorite" Member="Favorites">
+    <Type Name="Favorite">
+      <Column Name="Username" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Playlist_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="User_Favorite" Member="User" ThisKey="Username" OtherKey="Username" Type="User" IsForeignKey="true" />
+      <Association Name="Playlist_Favorite" Member="Playlist" ThisKey="Playlist_Id" OtherKey="Playlist_Id" Type="Playlist" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

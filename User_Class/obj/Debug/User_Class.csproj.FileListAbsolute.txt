@@ -1,0 +1,7 @@
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\User_Class\bin\Debug\User_Class.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\User_Class\bin\Debug\User_Class.pdb
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\User_Class\obj\Debug\User_Class.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\User_Class\obj\Debug\User_Class.pdb
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\User_Class\bin\Debug\Database.dll
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\User_Class\bin\Debug\Database.pdb
+c:\users\admin\documents\visual studio 2013\Projects\Online_Music_System\User_Class\obj\Debug\User_Class.csprojResolveAssemblyReference.cache
